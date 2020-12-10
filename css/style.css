@@ -31,7 +31,7 @@ body {
 
 .wrapper {
   max-width: 312px;
-  margin: 0 auto;
+  margin: 76px auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
 }
 
 .wrapper > h1 {
@@ -69,5 +68,57 @@ body {
   color: var(--grayish-blue);
   text-align: center;
   margin-bottom: 7.5rem;
+}
+
+.card {
+  width: 31.2rem;
+  height: 21.8rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  margin-bottom: 2.4rem;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 2.7rem;
+}
+
+.card:first-child {
+  border-top: 4px solid var(--cyan);
+}
+
+.card:nth-child(2) {
+  border-top: 4px solid var(--red);
+}
+
+.card:nth-child(3) {
+  border-top: 4px solid var(--orange);
+}
+
+.card:last-child {
+  border-top: 4px solid var(--blue);
+}
+
+.card-title {
+  font-size: 2rem;
+  color: var(--very-dark-blue);
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: var(--grayish-blue);
+}
+
+.card-img {
+  margin-left: calc(100% - 32px - 27px);
+  margin-top: 30px;
+}
+
+.card::before {
+  content: '';
+  display: block;
+  top: 0;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
